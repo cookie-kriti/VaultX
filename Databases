@@ -1,0 +1,34 @@
+create table Account_checking
+(Ac_no varchar (50),
+ CustomerNAme char(50),
+ Balance float(50.00),
+ CustomerID varchar(50));
+
+Insert into Account_checking
+Values("SBI3245876","Ram","20000","2313333");
+Values("SBI2376541","Shyam","30000","231333");
+
+Create table savingAccount
+(Ac_no varchar (50),
+ customerNAme char (40),
+ Balance float (50),
+ InterestRate float (50),
+ CustomerID varchar(40));
+
+Insert into SavingAccount
+Values("SBI3245876","Ram","20000","30%","2313333");
+Values("SBI2376541","Shyam","30000","10%","231333");
+
+
+Create table Transaction
+(Transaction_Am int (40),
+ Transactiontype char (50),
+ Transaction_date Date (50),
+ From_Account char (50),
+ To_Account char (50),
+ CustomerID int(50));
+
+Insert into Transaction
+Values("3245876","20000","RTGS","30-10-2024","Ram","Rita","2313333");
+Values("2376541","30000","NEFT","10-12-2023,"Shyam","charu","231333");
+
